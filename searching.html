@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Market</title>
+</head>
+<body>
+    <h1>Searching auto</h1>
+    <h2>Filter :</h2>
+    <form action="https://fom.in.ua/echo">
+        <label for="Car_body_types">Car Body Types :
+            <select name="Car body types" id="Car_body_types">
+                <option value="Micro">Micro</option>
+                <option value="Hatchback">Hatchback</option>
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="MPV">MPV</option>
+                <option value="Convertible">Convertible</option>
+                <option value="Wagon">Wagon</option>
+                <option value="Luxury">Luxury</option>
+                <option value="Antique">Antique</option>
+                <option value="Coupe">Coupe</option>
+                <option value="Sports car">Sports car</option>
+                <option value="Supercar">Supercar</option>
+                <option value="Musclecar">Musclecar</option>
+                <option value="Limousine">Limousine</option>
+                <option value="Hybrid car">Hybrid car</option>
+                <option value="Electric car">Electric car</option>
+                <option value="Diesel car">Diesel car</option>
+            </select>
+        </label>
+        <br>
+        <label for="Auto_brands">Auto brands :
+            <input type="text" name="Auto brands" id="Auto_brands">
+        </label>
+        <br>
+        <label for="Country_of_manufacture">Country of manufacture :
+            <input type="text" name="Country of manufacture" id="Country_of_manufacture">
+        </label>
+        <br>
+        <label for="price_from">Price : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; from : 
+            <input type="number" name="price_from" id="price_from" value="0"> $
+        </label>
+        <label for="price_to">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; to :
+            <input type="number" name="price_to" id="price_to" value="999999"> $
+        </label>
+        <br>
+        <label for="Year_of_manifacture">Year of manifacture : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; from :
+            <input type="number" min="1980" max="2023" name="year_from" id="Year_of_manifacture" placeholder="2017">            
+        </label>
+        <label for="year_to">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; to :
+            <input type="number" min="1980" max="2023" name="year_to" id="year_to" placeholder="2023">
+        </label>
+        <br>
+        <label for="Condition">Condition :
+            <select multiple name="Car_Condition" id="Condition">
+                <option value="New">New</option>
+                <option value="Used">Used</option>
+                <option value="In credit">In credit</option>
+                <option value="Cleared by customs">Cleared by customs</option>
+                <option value="Uncleared by customs">Uncleared by customs</option>
+                <option value="Broken">Broken</option>
+                <option value="Run&drive">Run&drive</option>
+            </select>
+        </label>
+        <br>
+        <label for="Fuel_type">Fuel type : 
+            <select name="Fuel_type" id="Fuel_type">
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Electro">Electro</option>
+            </select>
+        </label>
+        <br>
+        <label for="Gearbox">Gearbox type : 
+            <select name="Gearbox_type" id="Gearbox">
+                <option value="Automatic transmission">Automatic transmission</option>
+                <option value="Manual transmission">Manual transmission</option>
+            </select>
+        </label>
+        <br>
+        <label for="Color">Color :
+            <input type="color" name="Color" id="Color">
+        </label>
+        <br>
+        <label for="Comfort">Comfort
+            <select name="Comfort" id="Comfort">
+                <option value="Luxury">Luxury</option>
+                <option value="Leather interior">Leather interior</option>
+                <option value="Luke">Luke</option>
+                <option value="Air conditioner">Air conditioner</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
